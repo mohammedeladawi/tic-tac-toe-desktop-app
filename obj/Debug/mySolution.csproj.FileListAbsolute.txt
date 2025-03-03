@@ -1,0 +1,10 @@
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\bin\Debug\mySolution.exe.config
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\bin\Debug\mySolution.exe
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\bin\Debug\mySolution.pdb
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\obj\Debug\mySolution.csproj.AssemblyReference.cache
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\obj\Debug\mySolution.Form1.resources
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\obj\Debug\mySolution.Properties.Resources.resources
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\obj\Debug\mySolution.csproj.GenerateResource.cache
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\obj\Debug\mySolution.csproj.CoreCompileInputs.cache
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\obj\Debug\mySolution.exe
+C:\Users\mazik\OneDrive\سطح المكتب\Programming Fundamentals\14. C# - Level 1\27. Tic-Tac-Toe Game\mySolution\obj\Debug\mySolution.pdb
