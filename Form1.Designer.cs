@@ -127,6 +127,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox1.Location = new System.Drawing.Point(651, 267);
             this.pictureBox1.Name = "pictureBox1";
@@ -140,6 +141,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox2.Location = new System.Drawing.Point(847, 267);
             this.pictureBox2.Name = "pictureBox2";
@@ -152,6 +154,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox3.Location = new System.Drawing.Point(1035, 267);
             this.pictureBox3.Name = "pictureBox3";
@@ -164,6 +167,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox4.Location = new System.Drawing.Point(651, 440);
             this.pictureBox4.Name = "pictureBox4";
@@ -177,6 +181,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox5.Location = new System.Drawing.Point(847, 440);
             this.pictureBox5.Name = "pictureBox5";
@@ -189,6 +194,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox6.Location = new System.Drawing.Point(1035, 440);
             this.pictureBox6.Name = "pictureBox6";
@@ -201,6 +207,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox7.Location = new System.Drawing.Point(651, 613);
             this.pictureBox7.Name = "pictureBox7";
@@ -214,6 +221,7 @@
             // pictureBox8
             // 
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox8.Location = new System.Drawing.Point(847, 613);
             this.pictureBox8.Name = "pictureBox8";
@@ -226,6 +234,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = global::mySolution.Properties.Resources.question_mark_96;
             this.pictureBox9.Location = new System.Drawing.Point(1035, 613);
             this.pictureBox9.Name = "pictureBox9";

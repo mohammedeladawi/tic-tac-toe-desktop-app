@@ -37,13 +37,15 @@ namespace mySolution
 
         }
 
-        string currentPlayer;
+        enPlayer currentPlayer;
+        enum enPlayer { Player1, Player2 };
+
         string winner;
 
-        Dictionary<string, short> scores = new Dictionary<string, short>
+        Dictionary<enPlayer, short> scores = new Dictionary<enPlayer, short>
         {
-            { "Player1", 0 },
-            { "Player2", 0 }
+            { enPlayer.Player1, 0 },
+            { enPlayer.Player2, 0 }
         };
 
         bool isClickedBefore(PictureBox sender)
@@ -60,12 +62,12 @@ namespace mySolution
         {
             switch(currentPlayer)
             {
-                case "Player1":
+                case enPlayer.Player1:
                     sender.Image = Resources.X;
                     sender.Tag = "clicked";
                     break;
 
-                case "Player2":
+                case enPlayer.Player2:
                     sender.Image = Resources.O;
                     sender.Tag = "clicked";
                     break;
@@ -74,14 +76,14 @@ namespace mySolution
 
         bool isThereAWinner()
         {
-            short[] winnerProbabilities = { 73, 146, 292, 7, 56, 448, 273, 84 };
+            short[] winProbabilities = { 73, 146, 292, 7, 56, 448, 273, 84 };
 
-            for (byte i = 0; i < winnerProbabilities.Length; i++)
+            for (byte i = 0; i < winProbabilities.Length; i++)
             {
-                if ((scores[currentPlayer] & winnerProbabilities[i]) == winnerProbabilities[i])
+                if ((scores[currentPlayer] & winProbabilities[i]) == winProbabilities[i])
                 {
                     // end game 
-                    winner = currentPlayer;
+                    winner = (currentPlayer == enPlayer.Player1) ? "Player 1" : "Player 2";
                     return true;
                 }
             }
@@ -91,7 +93,7 @@ namespace mySolution
         bool isDraw()
         {
             
-            if ((scores["Player1"] + scores["Player2"]) == 511)
+            if ((scores[enPlayer.Player1] + scores[enPlayer.Player2]) == 511)
             {
                 winner = "Draw";
                 return true;
@@ -124,11 +126,10 @@ namespace mySolution
 
         void endGame()
         {
-            currentPlayer = "Game Over";
             lblGameStatus.Text = winner;
-            lblPlayerTurn.Text = currentPlayer;
+            lblPlayerTurn.Text = "Game Over";
             disableAllPBs();
-            MessageBox.Show("Game Over", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Game Over", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         void handleClickedPB(PictureBox sender)
@@ -136,7 +137,7 @@ namespace mySolution
             // check if it is clicked before
             if (isClickedBefore(sender))
             {
-                MessageBox.Show("Already Clicked", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Already Clicked", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -155,8 +156,8 @@ namespace mySolution
             else
             {
                 // change turn
-                currentPlayer = (currentPlayer == "Player1") ? "Player2" : "Player1";
-                lblPlayerTurn.Text = currentPlayer;
+                currentPlayer = (currentPlayer == enPlayer.Player1) ? enPlayer.Player2 : enPlayer.Player1;
+                lblPlayerTurn.Text = (currentPlayer == enPlayer.Player1) ? "Player 1" : "Player 2";
             }
 
         }
@@ -236,10 +237,11 @@ namespace mySolution
         
         void startGame()
         {
-            scores["Player1"] = 0;
-            scores["Player2"] = 0;
-            currentPlayer = "Player1";
-            lblPlayerTurn.Text = currentPlayer;
+            scores[enPlayer.Player1] = 0;
+            scores[enPlayer.Player2] = 0;
+            
+            currentPlayer = enPlayer.Player1;
+            lblPlayerTurn.Text = (currentPlayer == enPlayer.Player1) ? "Player 1" : "Player 2";
 
             winner = "In Progress";
             lblGameStatus.Text = winner;
