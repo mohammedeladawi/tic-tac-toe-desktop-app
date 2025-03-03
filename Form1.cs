@@ -162,58 +162,6 @@ namespace mySolution
 
         }
         
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            handleClickedPB((PictureBox)sender);
-
-        }
-
         void pbInitialization(PictureBox pb, short tagVal)
         {
             pb.Tag = tagVal;
@@ -257,5 +205,12 @@ namespace mySolution
         {
             startGame();
         }
+        
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+            handleClickedPB((PictureBox)sender);
+        }
+
+
     }
 }
